@@ -1,0 +1,31 @@
+body {
+    font-family: sans-serif;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+label {
+    font-size: 18px;
+    display: block;
+    padding-bottom: 10px;
+}
+
+input, textarea, select {
+    display: block;
+    width: 100%;
+}
+
+form {
+    background-color: #e2e0e3;
+    padding: 40px 40px 40px 40px;
+}
+
+#button-area {
+    float: left;
+    width: 50%;
+    height: 25%;
+}
+
+input [type="checkbox"], [type="radio"] {
+    vertical-align: -30%;
+}
