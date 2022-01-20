@@ -45,8 +45,18 @@ footer {
     text-align: right;
 }
 
+.row {
+    justify-content: center;
+}
+
 #img-caption {
     font-size: 30px;
     text-align: center;
 }
 
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+}
