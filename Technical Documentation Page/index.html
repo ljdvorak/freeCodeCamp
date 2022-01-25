@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial;
+            padding: 10px;
+            background: #f1f1f1;
+        }
+
+        /* Header/Blog Title */
+        .header {
+            padding: 30px;
+            text-align: center;
+            background: white;
+        }
+
+        .header h1 {
+            font-size: 50px;
+        }
+
+        /* Style the top navigation bar */
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        /* Style the topnav links */
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* Change color on hover */
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Create two unequal columns that floats next to each other */
+        /* Left column */
+        .leftcolumn {
+            float: left;
+            width: 25%;
+        }
+
+        /* Right column */
+        .rightcolumn {
+            float: left;
+            width: 75%;
+            background-color: #f1f1f1;
+            padding-left: 20px;
+        }
+
+        /* Fake image */
+        .fakeimg {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+
+        /* Add a card effect for articles */
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+            margin-top: 20px;
+        }
+
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 800px) {
+
+            .leftcolumn,
+            .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+        @media screen and (max-width: 400px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <nav id="navbar">
+                <div class="topnav">
+                    <header>Tech Doc</header>
+                    <a href="#ONE" class="nav-link">ONE</a>
+                    <a href="#TWO" class="nav-link">TWO</a>
+                    <a href="#THREE" class="nav-link">THREE</a>
+                    <a href="#FOUR" class="nav-link">FOUR</a>
+                    <a href="#FIVE" class="nav-link">FIVE</a>
+                    <a href="#SIX" style="float:right">Link</a>
+                </div>
+            </nav>
+        </div>
+        <!-- </div> -->
+        <div class="rightcolumn">
+            <div class="header">
+                <h1>Technical Documentaion Page</h1>
+                <p>text here</p>
+            </div>
+            <main id="main-doc">
+                <div class="card">
+                    <section class="main-section" id="ONE">
+                        <header>ONE</header>
+                        <h5>Title description, Dec 7, 2017</h5>
+                        <div class="fakeimg" style="height:200px;">Image</div>
+                        <code></code>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo perspiciatis quos
+                            nesciunt
+                            at. Eius distinctio odit hic, quae, eligendi repellendus necessitatibus eos odio dolor
+                            doloribus delectus eaque non, a ab?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nam accusantium rem numquam?
+                            Ipsa ea sed ex maxime placeat dignissimos mollitia aliquam, quisquam eos iste ducimus
+                            unde,
+                            totam, recusandae fugiat.</p>
+                        <li>list</li>
+                    </section>
+                </div>
+                <div class="card">
+                    <section class="main-section" id="TWO">
+                        <<header>TWO</header>
+                            <h5>Title description, Sep 2, 2017</h5>
+                            <div class="fakeimg" style="height:200px;">Image</div>
+                            <code></code>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum aliquam dolores
+                                commodi
+                                rerum? Quasi eaque ducimus earum officiis nobis, expedita et quaerat reiciendis
+                                repudiandae distinctio dolor assumenda suscipit ullam eos.</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam earum natus
+                                accusantium assumenda ratione odit ipsum nam perspiciatis. Nisi vero id accusantium
+                                velit voluptatum in deserunt minus facilis explicabo similique!</p>
+                            <li>list</li>
+                    </section>
+                </div>
+                <div class="card">
+                    <section class="main-section" id="THREE">
+                        <header>THREE</header>
+                        <h5>Title description, Sep 2, 2017</h5>
+                        <div class="fakeimg" style="height:200px;">Image</div>
+                        <code></code>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis iste tempora nulla incidunt
+                            omnis nostrum ducimus quasi. Nemo rem quam beatae minima quisquam? Esse officia, quos
+                            vero
+                            voluptate harum at?</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur in iusto molestias,
+                            voluptatum quibusdam quae ipsum explicabo asperiores blanditiis amet neque sequi,
+                            suscipit,
+                            aliquid corporis! Beatae aut et modi molestiae.</p>
+                        <li>list</li>
+                    </section>
+                </div>
+                <div class="card">
+                    <section class="main-section" id="FOUR">
+                        <header>FOUR</header>
+                        <h5>Title description, Sep 2, 2017</h5>
+                        <div class="fakeimg" style="height:200px;">Image</div>
+                        <code></code>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, ratione placeat
+                            delectus aut minus qui aspernatur non, deleniti nesciunt amet animi iusto sapiente a? Ab
+                            perferendis aspernatur dolor distinctio exercitationem?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, sit! Cupiditate eos ducimus
+                            esse velit optio repudiandae veniam exercitationem ipsam perspiciatis officia, possimus
+                            tenetur, qui, praesentium tempore ex quod eum?</p>
+                        <li>list</li>
+                    </section>
+                </div>
+                <div class="card">
+                    <section class="main-section" id="FIVE">
+                        <header>FIVE</header>
+                        <h5>Title description, Sep 2, 2017</h5>
+                        <div class="fakeimg" style="height:200px;">Image</div>
+                        <code></code>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut totam animi soluta,
+                            nesciunt
+                            iusto sunt deleniti dolor quaerat quas, repellendus, dolorum necessitatibus culpa
+                            repudiandae? Voluptates aliquam possimus id hic facere?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia molestiae aliquid
+                            harum,
+                            quos obcaecati dolore, tenetur quo eos quas iusto debitis? Nemo fugiat ipsa suscipit
+                            iure
+                            nostrum dignissimos, earum laudantium.</p>
+                        <li>list</li>
+                    </section>
+                </div>
+            </main>
+
+            <div class="footer">
+                <h2>Footer</h2>
+            </div>
+
+            <script type="text/javascript"
+                src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
